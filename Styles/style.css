@@ -36,6 +36,22 @@ pre {
     white-space: pre-wrap;
     word-wrap: break-word;
     background-color: transparent;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+pre p {
+    margin: 0;
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.8;
+    display: block;
+}
+
+pre p b {
+    display: block;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
 }
   
 
@@ -391,10 +407,12 @@ span.primary-color {
 .about-content h3{
     font-size: 2.4rem;
     color: rgb(0, 225, 255);
+    text-align: left;
 }
 .about-content p{
     font-size: 1.5rem;
     margin: 2rem 0 3rem;
+    text-align: left;
 }
 
 
@@ -425,6 +443,7 @@ span.primary-color {
 .education-column .title{
     font-size: 2.3rem;
     margin: 0 0 1.5rem 2rem;
+    text-align: left;
 }
 .education-column .education-box{
     border-left: .2rem solid var(--primary-color);
@@ -452,6 +471,8 @@ span.primary-color {
     overflow: hidden;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    text-align: left;
+    white-space: normal;
 }
 .education-content .content::before{
     content: '';
@@ -472,15 +493,18 @@ span.primary-color {
     font-size: 1.3rem;
     color: var(--primary-color);
     padding-bottom: .5rem;
+    text-align: left;
 }
 .education-content .content .year i{
     padding-right: .5rem;
 }
 .education-content .content h3{
     font-size: 1.8rem;
+    text-align: left;
 }
 .education-content .content p{
     font-size: 1.4rem;
+    text-align: left;
 }
 
 /* contacts */
@@ -696,6 +720,17 @@ span.primary-color {
         word-wrap: break-word;
         overflow-x: auto;
         font-size: 0.9rem;
+        padding: 0.5rem 0;
+        margin: 0;
+    }
+    .education-content .content pre p{
+        margin: 0.5rem 0;
+        line-height: 1.8;
+        display: block;
+    }
+    .education-content .content pre b{
+        display: block;
+        margin: 0.8rem 0 0.3rem 0;
     }
     .about-content p{
         word-wrap: break-word;
@@ -735,7 +770,15 @@ span.primary-color {
         font-size: 1.5rem;
     }
     .education-content .content pre{
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        line-height: 1.6;
+    }
+    .education-content .content pre p{
+        margin: 0.3rem 0;
+    }
+    .education-content .content pre b{
+        margin: 0.5rem 0 0.2rem 0;
+        display: block;
     }
     .contact form .input-box input{
         width: 100%;
